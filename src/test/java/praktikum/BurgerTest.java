@@ -21,6 +21,9 @@ public class BurgerTest {
     private Ingredient ingredient;
     @Mock
     private Bun bun;
+    @Mock
+    Burger burger;
+
     @Test
     public void setBunsSpecificBunShowsOk() {
         Burger burger = new Burger(bun, ingredients);
@@ -31,8 +34,8 @@ public class BurgerTest {
     @Test
     public void addIngredientSpecificIngedientShowsOk() {
         Burger burger = new Burger(bun, ingredients);
-        burger.addIngredient(ingredient);
-        verify(ingredients).add(ingredient);
+        burger.addIngredient(ingredient); // call the method
+        verify(ingredients).add(ingredient); // verify that the method was called with correct parameter
     }
 
     @Test
@@ -44,6 +47,9 @@ public class BurgerTest {
 
     @Test
     public void moveIngredient() {
+        Burger burger = new Burger(bun, ingredients);
+        burger.moveIngredient(10,15);// call the method
+        verify(ingredients).remove(15); // verify that the method was called with correct parameter
     }
 
     @Test
