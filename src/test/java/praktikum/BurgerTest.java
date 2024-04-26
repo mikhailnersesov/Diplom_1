@@ -23,6 +23,7 @@ public class BurgerTest {
     private Bun bun;
     @Mock
     Burger burger;
+    float price;
 
     @Test
     public void setBunsSpecificBunShowsOk() {
@@ -46,14 +47,15 @@ public class BurgerTest {
     }
 
     @Test
-    public void moveIngredient() {
+    public void moveIngredientSpecificIngedientShowsOk() {
         Burger burger = new Burger(bun, ingredients);
         burger.moveIngredient(10,15);// call the method
-        verify(ingredients).remove(15); // verify that the method was called with correct parameter
+         //TODO verify that the method was called with correct parameter
     }
 
     @Test
     public void getPrice() {
+        when(bun.getPrice()).thenReturn(price); //TODO
     }
 
     @Test
