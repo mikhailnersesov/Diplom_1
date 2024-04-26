@@ -1,4 +1,4 @@
-package com.food;
+package praktikum;
 
 import org.junit.Test;
 import praktikum.Bun;

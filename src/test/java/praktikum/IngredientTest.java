@@ -26,8 +26,8 @@ public class IngredientTest {
     }
 
     @Test
-    public void getType() {
-        IngredientType expectedType = null; //TODO
+    public void getTypeNullShowsOk() {
+        IngredientType expectedType = INGREDIENT_TYPE;
         Ingredient ingredient = new Ingredient(expectedType, INGREDIENT_NAME, INGRDIENT_PRICE);
         IngredientType actualName = ingredient.getType();
         assertEquals(expectedType, actualName);

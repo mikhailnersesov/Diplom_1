@@ -1,15 +1,19 @@
 package praktikum;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import static praktikum.Burger.bun;
+
 public class Praktikum {
+    //public Bun bun; //TODO разрыв зависимости
 
     public static void main(String[] args) {
         // Инициализируем базу данных
         Database database = new Database();
 
         // Создадим новый бургер
-        Burger burger = new Burger();
+        Burger burger = new Burger(bun, new ArrayList<>());
 
         // Считаем список доступных булок из базы данных
         List<Bun> buns = database.availableBuns();

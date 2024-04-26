@@ -8,7 +8,7 @@ package praktikum;
 public class Ingredient {
 
     public IngredientType type;
-    public String name;
+public String name;
     public float price;
 
     public Ingredient(IngredientType type, String name, float price) {
