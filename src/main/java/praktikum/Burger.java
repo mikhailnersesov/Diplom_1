@@ -14,10 +14,16 @@ public class Burger {
     public static Bun bun; //TODO dependency injection, check if public or private?
     private List<Ingredient> ingredients; //TODO dependency injection
 
+    public static Bun getBun() {
+        return bun;
+    }
+
     public Burger(Bun bun, List<Ingredient> ingredients) {
         this.ingredients = ingredients;
         this.bun = bun;
     }
+
+
 
     public void setBuns(Bun bun) {
         this.bun = bun;

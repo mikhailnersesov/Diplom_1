@@ -21,9 +21,11 @@ public class BurgerTest {
     private Ingredient ingredient;
     @Mock
     private Bun bun;
-
     @Test
-    public void setBuns() {
+    public void setBunsSpecificBunShowsOk() {
+        Burger burger = new Burger(bun, ingredients);
+        burger.setBuns(bun);
+        assertEquals(bun,burger.getBun());
     }
 
     @Test
@@ -50,5 +52,12 @@ public class BurgerTest {
 
     @Test
     public void getReceipt() {
+    }
+
+    @Test
+    public void getBunSpecificBunShowsOk() {
+        Burger burger = new Burger(bun, ingredients);
+        Bun actualBun = burger.getBun();
+        assertEquals(bun, actualBun);
     }
 }
