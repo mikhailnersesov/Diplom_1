@@ -5,7 +5,6 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -50,7 +49,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void getPrice() {
+    public void getPriceSpecificPriceShowsOk() {
         List<Ingredient> ingredients = List.of(ingredient); // mocking the line: " for (Ingredient ingredient : ingredients) {"
         Burger burger = new Burger(bun, ingredients);
         float expectedPrice = 50.F;
@@ -62,7 +61,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void getReceipt() {
+    public void getReceiptSpecificReceiptShowsOk() {
         List<Ingredient> ingredients = List.of(ingredient);
         Burger burger = new Burger(bun, ingredients);
         when(bun.getName()).thenReturn("Ciabatta");
