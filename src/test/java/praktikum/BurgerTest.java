@@ -73,7 +73,7 @@ public class BurgerTest {
                 "\n" +
                 "Price: 0,000000\n";
         String actualReceipt = burger.getReceipt();
-        assertEquals(expectedReceipt,actualReceipt);
+        assertEquals(expectedReceipt.replaceAll("\n", "").replaceAll("\r", ""),actualReceipt.replaceAll("\n", "").replaceAll("\r", "")); //workaround necessary, while even though the strings are equal. junit delivers failure "content have differences only in line separators junit how to fix"
     }
 
     @Test

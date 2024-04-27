@@ -28,7 +28,7 @@ public class BunTest {
     }
 
     @Test
-    public void getNameCiabattaShowsOk() {
+    public void getNameParameterisedNameShowsOk() {
         String expectedName = bunName;
         Bun bun = new Bun(expectedName, bunPrice);
         String actualName = bun.getName();
@@ -36,7 +36,7 @@ public class BunTest {
     }
 
     @Test
-    public void getPriceTenShowsOk() {
+    public void getPriceParameterisedPriceShowsOk() {
         float expectedPrice = bunPrice;
         Bun bun = new Bun(bunName, expectedPrice);
         float actualPrice = bun.getPrice();
