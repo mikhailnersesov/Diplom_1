@@ -12,7 +12,7 @@ import java.util.List;
 public class Burger {
 
     public static Bun bun; //TODO dependency injection, check if public or private?
-    private List<Ingredient> ingredients; //TODO dependency injection
+    public static List<Ingredient> ingredients;
 
     public static Bun getBun() {
         return bun;
@@ -43,6 +43,7 @@ public class Burger {
 
     public float getPrice() {
         float price = bun.getPrice() * 2;
+
 
         for (Ingredient ingredient : ingredients) {
             price += ingredient.getPrice();
