@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class Burger {
 
-    public static Bun bun; //TODO dependency injection, check if public or private?
+    public static Bun bun;
     public static List<Ingredient> ingredients;
 
     public static Bun getBun() {

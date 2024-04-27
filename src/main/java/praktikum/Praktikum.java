@@ -6,7 +6,6 @@ import java.util.List;
 import static praktikum.Burger.bun;
 
 public class Praktikum {
-    //public Bun bun; //TODO разрыв зависимости
 
     public static void main(String[] args) {
         // Инициализируем базу данных
