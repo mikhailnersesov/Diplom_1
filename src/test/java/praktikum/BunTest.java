@@ -24,6 +24,8 @@ public class BunTest {
                 {"&%$§)=", 10.0F},
                 {"Ciabatta", -10.0F},
                 {"Ciabatta", 0},
+                {"Ciabatta", Float.MAX_VALUE},
+                {"Ciabatta", Float.MIN_VALUE},
         };
     }
 
