@@ -3,12 +3,11 @@ package praktikum;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import praktikum.Bun;
 
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class BunTest {
+public class BunParamTest {
     @Parameterized.Parameter(0)
     public String bunName;
     @Parameterized.Parameter(1)

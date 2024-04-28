@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to final project in yandex automation 6th sprint 👋</h1>
+<h1 align="center">Welcome to task 1 of the graduation project in yandex automation course 👋</h1>
 
 > Author: Mikhail Nersesov
 >

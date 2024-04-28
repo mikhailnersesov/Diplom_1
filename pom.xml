@@ -55,6 +55,11 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <excludes>
+                       **/praktikum/Database.*
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
