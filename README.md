@@ -22,17 +22,12 @@ To run the tests:
 mvn clean test
 ```
 
-To clean the target folder:
-
-```sh
-mvn clean
-```
-
 To get a coverage report:
 
 ```sh
 mvn verify
 ```
+open in browser: target/site/jacoco/index.html 
 
 ## 🚀 Tasks
 > ++ Склонируй репозиторий с заготовкой кода.
