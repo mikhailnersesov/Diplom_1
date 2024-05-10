@@ -2,7 +2,7 @@
 
 > Author: Mikhail Nersesov
 >
-> GitHub link: https://github.com/mikhailnersesov/QA-java-diplom-1
+> GitHub link: https://github.com/mikhailnersesov/Diplom_1
 
 ## ✨ Technologies in the project
 
