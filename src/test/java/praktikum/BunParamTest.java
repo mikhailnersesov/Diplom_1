@@ -41,6 +41,6 @@ public class BunParamTest {
         float expectedPrice = bunPrice;
         Bun bun = new Bun(bunName, expectedPrice);
         float actualPrice = bun.getPrice();
-        assertEquals(expectedPrice, actualPrice,0);
+        assertEquals(expectedPrice, actualPrice, 0);
     }
 }

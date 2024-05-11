@@ -20,6 +20,7 @@ public class BurgerTest {
     private Ingredient ingredient;
     @Mock
     private Bun bun;
+
     @Test
     public void setBunsSpecificBunShowsOk() {
         Burger burger = new Burger(bun, ingredients);
@@ -45,7 +46,7 @@ public class BurgerTest {
     public void moveIngredientSpecificIngedientShowsOk() {
         Burger burger = new Burger(bun, ingredients);
         burger.moveIngredient(10, 15);// call the method
-        verify(ingredients).add(15,ingredients.remove(10));
+        verify(ingredients).add(15, ingredients.remove(10));
     }
 
     @Test
@@ -73,7 +74,7 @@ public class BurgerTest {
                 "\n" +
                 "Price: 0,000000\n";
         String actualReceipt = burger.getReceipt();
-        assertEquals(expectedReceipt.replaceAll("\n", "").replaceAll("\r", ""),actualReceipt.replaceAll("\n", "").replaceAll("\r", "")); //workaround necessary, while even though the strings are equal. junit delivers failure "content have differences only in line separators junit how to fix"
+        assertEquals(expectedReceipt.replaceAll("\n", "").replaceAll("\r", ""), actualReceipt.replaceAll("\n", "").replaceAll("\r", "")); //workaround necessary, while even though the strings are equal. junit delivers failure "content have differences only in line separators junit how to fix"
     }
 
     @Test

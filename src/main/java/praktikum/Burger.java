@@ -1,6 +1,5 @@
 package praktikum;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,16 +13,14 @@ public class Burger {
     public static Bun bun;
     public static List<Ingredient> ingredients;
 
-    public static Bun getBun() {
-        return bun;
-    }
-
     public Burger(Bun bun, List<Ingredient> ingredients) {
         this.ingredients = ingredients;
         this.bun = bun;
     }
 
-
+    public static Bun getBun() {
+        return bun;
+    }
 
     public void setBuns(Bun bun) {
         this.bun = bun;

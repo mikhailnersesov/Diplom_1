@@ -27,11 +27,13 @@ To get a coverage report:
 ```sh
 mvn verify
 ```
-open in browser: target/site/jacoco/index.html 
+
+open in browser: target/site/jacoco/index.html
 
 ## 🚀 Tasks
+
 > ++ Склонируй репозиторий с заготовкой кода.
-> 
+>
 > ++ Подключи библиотеки: Jacoco, Mockito, JUnit 4.
 > Покрой тестами классы Bun, Burger, Ingredient, IngredientType. Используй моки, стабы и параметризацию там, где нужно.
 > Процент покрытия должен быть не ниже 70%.
