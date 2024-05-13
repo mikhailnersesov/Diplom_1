@@ -1,18 +1,26 @@
 package praktikum;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Модель бургера.
  * Бургер состоит из булочек и ингредиентов (начинка или соус).
  * Ингредиенты можно перемещать и удалять.
- * Можно распечать чек с информацией о бургере.
+ * Можно распечатать чек с информацией о бургере.
  */
 public class Burger {
 
-    public Bun bun;
-    public List<Ingredient> ingredients = new ArrayList<>();
+    public static Bun bun;
+    public static List<Ingredient> ingredients;
+
+    public Burger(Bun bun, List<Ingredient> ingredients) {
+        this.ingredients = ingredients;
+        this.bun = bun;
+    }
+
+    public static Bun getBun() {
+        return bun;
+    }
 
     public void setBuns(Bun bun) {
         this.bun = bun;
@@ -32,6 +40,7 @@ public class Burger {
 
     public float getPrice() {
         float price = bun.getPrice() * 2;
+
 
         for (Ingredient ingredient : ingredients) {
             price += ingredient.getPrice();
