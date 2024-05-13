@@ -14,7 +14,7 @@ public class BunParamTest {
     @Parameterized.Parameter(1)
     public float bunPrice;
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "{index} - bunName {0}, bunPrice {1}")
     public static Object[][] data() {
         return new Object[][]{
                 {"Ciabatta", 10.0F},
